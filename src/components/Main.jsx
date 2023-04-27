@@ -69,7 +69,7 @@ const Main = () => {
         </div>
       </div>
       <div className="mt-[-20px] ">
-        <p className=" mt-20 md:mt-0 text-sm italic text-gray-500 dark:text-white">
+        <p className=" mt-40 md:mt-0 text-sm italic text-gray-500 dark:text-white">
           Yukarıdaki linklerden sosyal medya hesaplarıma göz atabilir, bana mail
           gönderebilir ve CV'mi inceleyebilirsin!
         </p>
