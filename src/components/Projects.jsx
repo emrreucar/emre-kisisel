@@ -12,7 +12,7 @@ const Project = () => {
   return (
     <div id="projects" className="w-full mt-[150px] md:mt-0">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-sky-600 dark:text-rose-600 font-semibold">
+        <p className="text-xl tracking-widest uppercase text-sky-600 dark:text-rose-600 font-semibold mt-[130px] md:mt-10">
           Projelerim
         </p>
         <h2 className="py-4">İşte Projelerimin Bir Kısmı!</h2>

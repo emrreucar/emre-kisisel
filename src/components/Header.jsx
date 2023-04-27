@@ -5,7 +5,6 @@ import ThemeComp from "./ThemeComp";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -16,17 +15,15 @@ const Header = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if(window.scrollY >= 10){
+      if (window.scrollY >= 10) {
         setShadow(!shadow);
-      }
-      else{
+      } else {
         setShadow(shadow);
       }
     };
 
-    window.addEventListener('scroll', handleShadow);
-  }, [])
-
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   const navLinks = [
     {
@@ -57,7 +54,13 @@ const Header = () => {
   ];
 
   return (
-    <div className={shadow ? 'sticky top-0 w-full h-20 shadow-xl z-[999] bg-white dark:bg-[#121212] ' : 'sticky top-0 w-full h-20 z-[999] '} >
+    <div
+      className={
+        shadow
+          ? "sticky top-0 w-full h-20 shadow-xl z-[999] bg-white dark:bg-[#121212] "
+          : "sticky top-0 w-full h-20 z-[999] "
+      }
+    >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         <Link
           className="text-4xl font-semibold text-sky-600 duration-100 dark:text-rose-700 tracking-wider"
@@ -70,8 +73,11 @@ const Header = () => {
           <ul className="hidden md:flex items-center justify-end gap-10 mr-20">
             {navLinks.map((link) => (
               <li key={link.id}>
-                <a className="hover:text-sky-600 dark:hover:text-rose-700 duration-300" href={link.src}>
-                  {link.name} 
+                <a
+                  className="hover:text-sky-600 dark:hover:text-rose-700 duration-300"
+                  href={link.src}
+                >
+                  {link.name}
                 </a>
               </li>
             ))}
@@ -122,7 +128,13 @@ const Header = () => {
               <ul className="uppercase p-4">
                 {navLinks.map((link) => (
                   <li key={link.id} className="py-4 tracking-widest">
-                    <a onClick={() => setNav(false)} className="gap-10" href={link.src}>{link.name}</a>
+                    <a
+                      onClick={() => setNav(false)}
+                      className="gap-10"
+                      href={link.src}
+                    >
+                      {link.name}
+                    </a>
                   </li>
                 ))}
               </ul>

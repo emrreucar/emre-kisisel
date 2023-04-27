@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full mt-[200px] md:mt-0 lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl font-semibold tracking-widest uppercase text-sky-600 dark:text-rose-600">
+        <p className="text-xl font-semibold tracking-widest uppercase text-sky-600 dark:text-rose-600 mt-[130px] md:mt-0 md:mb-0 mb-10">
           Yeteneklerim
         </p>
 

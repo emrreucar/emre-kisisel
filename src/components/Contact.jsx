@@ -7,11 +7,11 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-sky-600 dark:text-rose-600 fontsemibold">
+        <p className="text-xl tracking-widest uppercase text-sky-600 dark:text-rose-600 fontsemibold mt-[100px] md:mt-10">
           İletişim
         </p>
         <h2 className="font-semibold text-2xl py-6">Bana Ulaş !</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8">
           {/* left side start */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -44,7 +44,7 @@ const Contact = () => {
           {/* left side end */}
 
           {/* right side start */}
-          <div className="flex flex-col items-center ml-[10%] md:ml-0 justify-end shadow-xl shadow-gray-400 bg-gray-100 dark:bg-black rounded-xl p-10 w-[100%] ">
+          <div className="flex flex-col items-center ml-[5%] lg:ml-0 justify-end shadow-xl shadow-gray-400 bg-gray-100 dark:bg-black rounded-xl p-10 w-[100%] ">
             <form
               action="https://getform.io/f/5efe5d9e-b5dd-4771-98aa-7830a332fad2"
               method="POST"

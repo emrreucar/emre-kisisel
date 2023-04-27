@@ -9,7 +9,7 @@ const Main = () => {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-[70%] mx-auto p-2 flex justify-center items-center">
         <div>
-          <h1 className="py-4 text-4xl">
+          <h1 className="py-4 text-4xl mt-[130px] md:mt-10">
             Merhaba, Ben{" "}
             <span className="text-sky-600 font-semibold dark:text-rose-700 duration-100">
               EMRE
